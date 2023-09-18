@@ -1,10 +1,13 @@
 #include <stdio.h>
-int main(){
-int n;
-printf("Enter a number : ");
-scanf("%d",&n);
-if (n%2 == 0){
-    printf("Even number");
-}
+
+int main() {
+    int x;
+    printf("Enter a amount of water chef drank today(ml): ");
+    scanf("%d",&x);
+    if (x<2000){
+        printf("chef is not following doctor's advice");
+    }else{
+        printf("chef is following doctor's advice");
+    }
     return 0;
 }
