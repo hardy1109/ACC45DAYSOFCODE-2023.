@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int T;  // Number of test cases
+    scanf("%d", &T);
+
+    while (T--) {
+        int N, M;  // N - Number of pieces needed, M - Number of cuts allowed
+        scanf("%d %d", &N, &M);
+
+        if (M % N == 0 || N == 1) {
+            printf("YES\n");
+        } else {
+            printf("NO\n");
+        }
+    }
+
+    return 0;
+}
