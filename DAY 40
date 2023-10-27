@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int X;
+    scanf("%d", &X);
+
+    int minCoins = 0;
+
+    while (X >= 10) {
+        X -= 10;
+        minCoins++;
+    }
+
+    while (X >= 5) {
+        X -= 5;
+        minCoins++;
+    }
+
+    if (X != 0) {
+        printf("-1\n");
+    } else {
+        printf("%d\n", minCoins);
+    }
+
+    return 0;
+}
